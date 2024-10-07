@@ -1,0 +1,11 @@
+.na-check {
+    background-color: white;
+    /* -webkit-mask: url('check.svg') no-repeat center; */
+    mask: url('check.svg') no-repeat center;
+}
+
+.na {
+    display: inline-block;
+    fill: white;
+    vertical-align: middle;
+}

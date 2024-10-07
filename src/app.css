@@ -1,0 +1,105 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap'); */
+
+:root {
+    /* font-family: Quicksand, system-ui, Helvetica, Arial, sans-serif; */
+    
+    --main-font: "League Spartan", 'Arial', sans-serif;
+    color-scheme: light dark;
+    --card-color: #e6d5bc;
+    --border-color: #c7a26b;
+    --popover-border-color: #27272a;
+    --background-color: #09090b;
+    /* --selected-background-color: #a5d6a7; */
+    --selected-background-color: #38a169;
+    
+    
+    --text-padding: 2px 10px;
+    --region-padding: 16px;
+    --border-radius: 5px;
+
+    --hover-background: #f1f5f9;
+    --selected-background: #e2e8f0;
+    --selected-foreground: inherit;
+    --muted-foreground: #64748b;
+
+    --theme2-background-color: #2d3748;
+    --theme2-icon-fill: #38a169;
+    --theme2-hover-background: #38a169;
+    --theme2-active-fill: #fafafa;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+body {
+    background-color: var(--background-color);
+    color: #75603f;
+    font-family: var(--main-font);
+    padding: var(--region-padding);
+    margin: 0 0 0 4rem;
+}
+
+button {
+    font-family: var(--main-font);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    border-style: unset;
+    padding: 10px;
+    color: #18181b;
+    background-color: #fafafa;
+}
+
+select, input {
+    /* padding: var(--text-padding); */
+    font-family: var(--main-font);
+    padding: 10px;
+    border-style: unset;
+    border-radius: var(--border-radius);
+    margin: 0;
+    color: #18181b;
+    background-color: var(--card-color);
+}
+
+/* .placeholder {
+    color: var(--muted-foreground);
+}
+
+.select-caret svg {
+		transition: transform 0.2s ease;
+	}
+
+.select-caret svg.open {
+    transform: rotate(180deg);
+} */
+
+table {
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    width: 100%;
+}
+
+th, td {
+    padding: var(--text-padding);
+    border: 1px solid var(--border-color);
+    background-color: var(--card-color);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.hover:hover, tr:hover, button:hover, .card:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+}
+
+
